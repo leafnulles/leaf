@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+ <style>
+ 
+ @keyframes best{
+   0%{transform:scale(1)}
+   0%{transform:scale(1.2)}
+}
+ 
+ .im{
+ width:300px;
+ height:300px;
+ margin:100px 100px;
+ transition:all 1s;
+ 
+ }
+
+    p{
+      color:white;
+      opacity:0;
+      position:absolute;
+      top:20vh;
+      left:20vw;
+   --   transition:all 1s;
+      }
+    
+ alert();
+ </style>
+  </head>
+  <body style="background:black;">	
+  <p id="gd">功德+100</p>
+	<img class="im" id="mg" src="muyu.png" onclick="muyu()"/>
+ <audio src="sound.mp3" id="ms"></audio>
+
+  </body>
+  <script>
+  
+  
+  function muyu(){
+    //  alert();
+   var mg= document.getElementById("mg");
+   var gd= document.getElementById("gd");
+   var ms= document.getElementById("ms");
+   ms.play();
+   mg.style.transform ="scale(1.2)";
+   gd.style.transform ="translateY(-28px)";
+   gd.style.transition = "all 1s";
+   gd.style.opacity ="1";
+   setTimeout(()=>{
+     mg.style.transform ="scale(1)";
+     gd.style.opacity ="0";
+     gd.style.transition = "none";
+     
+     gd.style.transform ="translateY(0)";
+     
+  },500);
+}
+  
+  
+  </script>
+</html>
