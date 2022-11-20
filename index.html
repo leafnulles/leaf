@@ -17,7 +17,7 @@
   
   .header{
     height:80px;
-    width:100%;
+    width:1200;
     background-color:#ffffff;
     border-bottom:1px solid #ddd;
   }
@@ -36,7 +36,7 @@ a{
   }
 
 .nav-box{
-  width:100%;
+  width:1200;
   display:flex;
   height:40px;
   align-items:center;
@@ -76,10 +76,10 @@ a{
 
 
 .banner{
-  width:100%;
+  width:1200;
   margin:0 auto;
   background: url("nxd.png") no-repeat center center;
-  height:312px;
+  height:402px;
   text-align:center;
   line-height:312px;
   color:#ffffff;
@@ -89,7 +89,7 @@ a{
 }
 
 .c{
-  width:100%;
+  width:1200;
   margin:0 auto;
   padding:40px 0;
   display:flex;
@@ -97,14 +97,35 @@ a{
 }
 
 .c.left{
-  margin-right:20px;
+  
+  margin-right:40px;
+  
   
 }
+
+
+p{
   
-  .one-main.c .left img{
-    border-radius:80px;
-  }
+  margin-top:80px;
+  margin-left:300px;
+  font-weight:700;
+  font-size:20px;
   
+}
+
+.c .one-main{
+  display:flex;
+  
+}
+
+.c .one-main .left .tit-one{
+  margin-left:30px;
+  line-height:50px;
+  padding-bottom:20px;
+  left:20px;
+}
+
+
   
   </style>
   <header class="header">
@@ -115,23 +136,24 @@ a{
      <li><a href="#">联系</a></li>
     </ul>
    </div>
-  </header>
-  
-  
-  <!--个人介绍-->
-  
-  
+  </header> <!--个人介绍-->
   <div class="banner">
    欢迎来到我的个人主页
   </div>
-  
-  
   <div class="c">
-  <div class="one-main">
-  <div class="left"><img src="m.png" width="400px" style="border-radius:50%">
+   <div class="one-main">
+    <div class="left">
+     <h1 class="tit-one">个人简介</h1> 
+     <img src="me.png" width="420px" style="border-radius:50%">
+    </div>
+    <div class="right">
+    <p>昵称:小叶</p>
+    <p>个性签名:一个平凡的叶子</p>
+    <p>标签:热爱 World</p>
+    <p>一个只会吃的boy</p>
+    <p>什么都不会的小白</p>
+    </div>
    </div>
-   <div class="right"></div>
-  </div>
   </div>
  </body>
 </html>
